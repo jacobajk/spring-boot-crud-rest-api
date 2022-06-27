@@ -17,7 +17,6 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @Entity
-
 public class User {
     @Id
     private long id;
@@ -85,7 +84,6 @@ public class ApiController {
         userRepository.delete(deleteUser);
         return "Delete user with the id: " + id;
     }
-
 
 }
 ```
